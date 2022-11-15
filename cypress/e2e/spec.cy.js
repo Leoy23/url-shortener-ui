@@ -33,7 +33,7 @@ describe('Page load', () => {
       ok: true,
       fixture: 'postSample.json'
     })
-    
+    cy.get('.submit-form-btn').click()
   })
 })
  
