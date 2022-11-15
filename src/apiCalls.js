@@ -1,7 +1,11 @@
 export const getUrls = () => {
   return fetch('http://localhost:3001/api/v1/urls')
-      .then(response => response.json())
-      .catch(error => console.log(error))
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`${response.status}`)
+        }
+        return response.json();
+      })
 }
 
 export const postUrls = (newURL) => {

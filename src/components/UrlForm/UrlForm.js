@@ -4,7 +4,6 @@ class UrlForm extends Component {
   constructor(props) {
     super();
     this.props = props;
-    console.log(this.props)
     this.state = {
       title: '',
       urlToShorten: ''
