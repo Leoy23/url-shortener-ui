@@ -3,3 +3,14 @@ export const getUrls = () => {
       .then(response => response.json())
       .catch(error => console.log(error))
 }
+
+export const postUrls = (newURL) => {
+  return fetch('http://localhost:3001/api/v1/urls', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(newURL)
+  })
+  .then(response => response.json())
+}
