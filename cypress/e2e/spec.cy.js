@@ -34,6 +34,10 @@ describe('Page load', () => {
       fixture: 'postSample.json'
     })
     cy.get('.submit-form-btn').click()
+    cy.get('.url-container > :nth-child(2)').should('exist')
+    cy.get(':nth-child(2) > h3').should('exist').should('contain', 'My favorite dogs')
+    cy.get(':nth-child(2) > .short-url-link').should('exist').should('contain', 'http://localhost:3001/useshorturl/4')
+    cy.get(':nth-child(2) > .long-url-link').should('exist').should('contain', 'https://www.google.com/search?q=google+images+of+schnauzers&sxsrf=ALiCzsYcItTS_AxMVKpnvUphREik2FRG2A:1668535532095&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj42r2d47D7AhUSMjQIHf-DD5kQ_AUoAXoECAEQAw&biw=1920&bih=944&dpr=1')
   })
 })
  
