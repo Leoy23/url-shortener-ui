@@ -1,6 +1,6 @@
 import React from "react";
 
-const UrlCard = ({title, short_url, long_url}) => {
+const UrlCard = ({ title, short_url, long_url }) => {
   return (
     <div className="url">
       <h3>{title}</h3>
