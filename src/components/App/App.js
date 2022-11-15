@@ -16,7 +16,7 @@ export class App extends Component {
   componentDidMount() {
     getUrls()
       .then(data => this.setState({urls: data.urls}))
-      .catch(error => this.setState({error: `Uh-oh! There's a "${error.message}" error! Try again! `}))
+      // .catch(error => this.setState({error: `Uh-oh! There's a "${error.message}" error! Try again! `}))
   }
 
   addURLS = (newURL) => {
@@ -31,7 +31,7 @@ export class App extends Component {
           <h1>URL Shortener</h1>
           <UrlForm addUrls={this.addURLS}/>
         </header>
-        {this.state.error ? <h2 className='error-msg'>{this.state.error}</h2> : null}
+        {/* {this.state.error ? <h2 className='error-msg'>{this.state.error}</h2> : null} */}
 
         <UrlContainer urls={this.state.urls}/>
       </main>
