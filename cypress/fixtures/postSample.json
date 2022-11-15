@@ -1,0 +1,10 @@
+{
+    "urls": [
+      {
+      "id": 4,
+      "long_url": "https://www.google.com/search?q=google+images+of+schnauzers&sxsrf=ALiCzsYcItTS_AxMVKpnvUphREik2FRG2A:1668535532095&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj42r2d47D7AhUSMjQIHf-DD5kQ_AUoAXoECAEQAw&biw=1920&bih=944&dpr=1",
+      "short_url": "http://localhost:3001/useshorturl/4",
+      "title": "My favorite dogs"
+      }
+    ]
+  }

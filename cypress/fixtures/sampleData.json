@@ -1,0 +1,11 @@
+{
+  "urls": [
+    {
+    "id": 3,
+    "long_url": "https://www.ticketmaster.com/phoenix-suns-vs-golden-state-warriors-phoenix-arizona-11-16-2022/event/19005D0B8F9F1519",
+    "short_url": "http://localhost:3001/useshorturl/3",
+    "title": "Ticket master example"
+    }
+  ]
+}
+
